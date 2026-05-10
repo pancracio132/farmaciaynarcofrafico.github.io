@@ -1,0 +1,174 @@
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  background: #f4f1ea;
+  color: #1a1a1a;
+  opacity: 1;
+}
+
+.preload {
+  animation: pageLoad 1s ease-in;
+}
+
+header {
+  background: #111;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 5px solid #c9a227;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 40px;
+  animation: dropIn 1s ease;
+}
+
+header p {
+  margin: 5px 0 0;
+  color: #c9a227;
+  font-style: italic;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.main-article {
+  background: white;
+  padding: 20px;
+  border: 1px solid #ddd;
+  animation: fadeInUp 1.2s ease;
+}
+
+.main-article h2 {
+  border-bottom: 2px solid #c9a227;
+  padding-bottom: 10px;
+}
+
+.main-article p {
+  line-height: 1.6;
+  text-align: justify;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.box {
+  background: white;
+  padding: 15px;
+  border: 1px solid #ddd;
+  animation: fadeIn 1.5s ease;
+}
+
+.box h3 {
+  border-bottom: 2px solid #c9a227;
+  padding-bottom: 5px;
+}
+
+.highlight {
+  background: #fff3cd;
+  padding: 10px;
+  border-left: 5px solid #c9a227;
+}
+
+button {
+  padding: 10px;
+  background: #c9a227;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+}
+
+button:hover {
+  background: #b08d1f;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #111;
+  color: white;
+  animation: fadeIn 2s ease;
+}
+
+/* ANIMACIONES */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes dropIn {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes pageLoad {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* EFECTOS */
+
+.pulse {
+  animation: pulseAnim 2s infinite;
+}
+
+@keyframes pulseAnim {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.02);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pulse-btn:hover {
+  animation: pulseAnim 0.6s infinite;
+}
+
+.float-in {
+  animation: fadeInUp 1.5s ease;
+}
