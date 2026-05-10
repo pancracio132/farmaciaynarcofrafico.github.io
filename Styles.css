@@ -1,174 +1,319 @@
 body {
-  margin: 0;
-  font-family: Georgia, serif;
-  background: #f4f1ea;
-  color: #1a1a1a;
-  opacity: 1;
+
+    margin: 0;
+
+    font-family: "Times New Roman", serif;
+
+    background: #e9dfc9;
+
+    background-image:
+        url("https://www.transparenttextures.com/patterns/paper-fibers.png");
+
+    color: #111;
 }
 
-.preload {
-  animation: pageLoad 1s ease-in;
+/* BARRA SUPERIOR */
+
+.top-bar {
+
+    background: black;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 8px;
+
+    font-size: 14px;
+
+    letter-spacing: 1px;
 }
+
+/* HEADER */
 
 header {
-  background: #111;
-  color: white;
-  padding: 20px;
-  text-align: center;
-  border-bottom: 5px solid #c9a227;
+
+    text-align: center;
+
+    padding: 20px;
+
+    border-bottom: 5px double black;
+
+    animation: fadeDown 1s ease;
 }
 
 header h1 {
-  margin: 0;
-  font-size: 40px;
-  animation: dropIn 1s ease;
+
+    margin: 0;
+
+    font-size: 70px;
+
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
 }
 
 header p {
-  margin: 5px 0 0;
-  color: #c9a227;
-  font-style: italic;
+
+    margin-top: 5px;
+
+    font-style: italic;
 }
 
-.container {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 20px;
-  padding: 20px;
+/* TITULAR */
+
+.headline {
+
+    text-align: center;
+
+    padding: 20px;
+
+    border-bottom: 2px solid black;
+
+    animation: fadeIn 1.5s ease;
 }
 
-.main-article {
-  background: white;
-  padding: 20px;
-  border: 1px solid #ddd;
-  animation: fadeInUp 1.2s ease;
+.headline h2 {
+
+    font-size: 50px;
+
+    margin: 0;
+
+    text-transform: uppercase;
 }
 
-.main-article h2 {
-  border-bottom: 2px solid #c9a227;
-  padding-bottom: 10px;
+.subtitle {
+
+    font-size: 22px;
+
+    margin-top: 15px;
+
+    font-style: italic;
 }
 
-.main-article p {
-  line-height: 1.6;
-  text-align: justify;
+/* IMAGEN */
+
+.main-image {
+
+    width: 100%;
+
+    height: 400px;
+
+    object-fit: cover;
+
+    margin-top: 20px;
+
+    border: 3px solid black;
 }
 
-.sidebar {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+/* ESTRUCTURA */
+
+.newspaper {
+
+    display: grid;
+
+    grid-template-columns: 3fr 1fr;
+
+    gap: 30px;
+
+    padding: 30px;
 }
 
-.box {
-  background: white;
-  padding: 15px;
-  border: 1px solid #ddd;
-  animation: fadeIn 1.5s ease;
+/* NOTICIA */
+
+.main-news {
+
+    background: #f8f1df;
+
+    padding: 25px;
+
+    border: 1px solid #333;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+    column-count: 2;
+
+    column-gap: 35px;
+
+    line-height: 1.8;
+
+    text-align: justify;
+
+    font-size: 18px;
+
+    animation: slideUp 1.5s ease;
 }
 
-.box h3 {
-  border-bottom: 2px solid #c9a227;
-  padding-bottom: 5px;
+.main-news h3 {
+
+    column-span: all;
+
+    font-size: 32px;
+
+    border-bottom: 2px solid black;
+
+    padding-bottom: 10px;
 }
 
-.highlight {
-  background: #fff3cd;
-  padding: 10px;
-  border-left: 5px solid #c9a227;
+/* LETRA GIGANTE */
+
+.main-news p::first-letter {
+
+    font-size: 45px;
+
+    font-weight: bold;
+
+    float: left;
+
+    margin-right: 8px;
+
+    line-height: 1;
 }
+
+/* FRASE */
+
+blockquote {
+
+    column-span: all;
+
+    font-size: 28px;
+
+    text-align: center;
+
+    font-style: italic;
+
+    border-top: 2px solid black;
+
+    border-bottom: 2px solid black;
+
+    padding: 20px;
+
+    margin-top: 20px;
+}
+
+/* LATERAL */
+
+aside {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.side-news {
+
+    background: #f8f1df;
+
+    padding: 20px;
+
+    border: 1px solid #333;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+
+    animation: fadeIn 2s ease;
+}
+
+.side-news h4 {
+
+    margin-top: 0;
+
+    border-bottom: 1px solid black;
+
+    padding-bottom: 10px;
+}
+
+/* BOTÓN */
 
 button {
-  padding: 10px;
-  background: #c9a227;
-  border: none;
-  cursor: pointer;
-  font-weight: bold;
-  width: 100%;
+
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+
+    background: black;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    transition: 0.3s;
 }
 
 button:hover {
-  background: #b08d1f;
+
+    background: #444;
+
+    transform: scale(1.03);
 }
 
+/* FOOTER */
+
 footer {
-  text-align: center;
-  padding: 15px;
-  background: #111;
-  color: white;
-  animation: fadeIn 2s ease;
+
+    text-align: center;
+
+    padding: 20px;
+
+    background: black;
+
+    color: white;
+
+    margin-top: 20px;
 }
 
 /* ANIMACIONES */
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
 
-  to {
-    opacity: 1;
-  }
+    from {
+
+        opacity: 0;
+    }
+
+    to {
+
+        opacity: 1;
+    }
 }
 
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
+@keyframes slideUp {
 
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+    from {
+
+        opacity: 0;
+
+        transform: translateY(50px);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+    }
 }
 
-@keyframes dropIn {
-  from {
-    transform: translateY(-50px);
-    opacity: 0;
-  }
+@keyframes fadeDown {
 
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
+    from {
 
-@keyframes pageLoad {
-  from {
-    opacity: 0;
-  }
+        opacity: 0;
 
-  to {
-    opacity: 1;
-  }
-}
+        transform: translateY(-50px);
+    }
 
-/* EFECTOS */
+    to {
 
-.pulse {
-  animation: pulseAnim 2s infinite;
-}
+        opacity: 1;
 
-@keyframes pulseAnim {
-  0% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(1.02);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
-
-.pulse-btn:hover {
-  animation: pulseAnim 0.6s infinite;
-}
-
-.float-in {
-  animation: fadeInUp 1.5s ease;
+        transform: translateY(0);
+    }
 }
