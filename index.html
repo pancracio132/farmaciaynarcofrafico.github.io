@@ -1,92 +1,152 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>El Boletín Científico</title>
 
-  <link rel="stylesheet" href="Styles.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EL HERALDO CIENTÍFICO</title>
+
+    <link rel="stylesheet" href="Styles.css">
 </head>
 
-<body class="preload">
+<body>
 
-<header class="fade-in">
-  <h1>EL BOLETÍN CIENTÍFICO</h1>
-  <p>Edición Especial: Farmacia y Narcotráfico</p>
-</header>
+    <!-- BARRA SUPERIOR -->
 
-<div class="container slide-up">
-
-  <div class="main-article">
-
-    <h2>Farmacia y Narcotráfico: La Doble Cara de la Ciencia</h2>
-
-    <p>
-      La farmacia es una ciencia del área de la salud encargada del estudio,
-      preparación, control y distribución de medicamentos para mejorar la vida humana.
-      Sin embargo, el mismo conocimiento químico puede ser utilizado de forma ilegal
-      en el narcotráfico.
-    </p>
-
-    <div class="highlight pulse">
-      “Una molécula no tiene moral, pero el ser humano sí.”
+    <div class="top-bar">
+        DOMINGO 10 DE MAYO 2026 | EDICIÓN INVESTIGATIVA | BARRANQUILLA
     </div>
 
-    <p>
-      Sustancias como los opioides, la cocaína o las anfetaminas pueden tener usos
-      médicos legítimos, pero también pueden ser desviadas hacia el mercado ilegal,
-      generando adicción, violencia y problemas de salud pública.
-    </p>
+    <!-- ENCABEZADO -->
 
-    <p>
-      El narcotráfico utiliza conocimientos de química avanzada para producir drogas
-      sintéticas en laboratorios clandestinos, sin control de calidad ni regulación sanitaria.
-    </p>
+    <header>
 
-    <p>
-      Esto demuestra que el problema no es la ciencia en sí,
-      sino el uso ético o no ético que se le da al conocimiento.
-    </p>
+        <h1>EL HERALDO CIENTÍFICO</h1>
 
-  </div>
+        <p>
+            La verdad detrás de la ciencia y el crimen
+        </p>
 
-  <div class="sidebar">
+    </header>
 
-    <div class="box float-in">
-      <h3>Dato Científico</h3>
-      <p>
-        El sistema nervioso es el principal objetivo de muchas drogas psicoactivas,
-        ya que alteran la dopamina y la percepción del placer.
-      </p>
+    <!-- TITULAR PRINCIPAL -->
+
+    <section class="headline">
+
+        <h2>
+            FARMACIA Y NARCOTRÁFICO:
+            CUANDO LA CIENCIA CRUZA LA LÍNEA ROJA
+        </h2>
+
+        <p class="subtitle">
+            El conocimiento farmacéutico puede salvar millones de vidas,
+            pero también ser utilizado en redes ilegales de producción de drogas.
+        </p>
+
+        <img src="laboratorio.jpg" class="main-image">
+
+    </section>
+
+    <!-- PERIÓDICO -->
+
+    <div class="newspaper">
+
+        <!-- NOTICIA PRINCIPAL -->
+
+        <article class="main-news">
+
+            <h3>La doble cara de la química moderna</h3>
+
+            <p>
+                La farmacia nació como una ciencia enfocada en mejorar la salud humana.
+                Sin embargo, el narcotráfico ha aprovechado conocimientos químicos y farmacológicos
+                para desarrollar sustancias ilegales altamente peligrosas.
+            </p>
+
+            <p>
+                Laboratorios clandestinos utilizan procesos similares a la industria farmacéutica:
+                síntesis química, manipulación de compuestos y alteración del sistema nervioso.
+            </p>
+
+            <p>
+                Expertos advierten que el problema no es la ciencia,
+                sino el uso sin ética del conocimiento.
+            </p>
+
+            <p>
+                Sustancias como los opioides, las anfetaminas y algunos compuestos
+                derivados de alcaloides naturales han demostrado que una misma molécula
+                puede tener usos terapéuticos o destructivos dependiendo del contexto.
+            </p>
+
+            <blockquote>
+                “La ciencia no tiene moral; el ser humano sí.”
+            </blockquote>
+
+        </article>
+
+        <!-- LATERAL -->
+
+        <aside>
+
+            <div class="side-news">
+
+                <h4>Dato Científico</h4>
+
+                <p>
+                    Muchas drogas actúan sobre neurotransmisores como la dopamina,
+                    alterando el sistema de recompensa cerebral.
+                </p>
+
+            </div>
+
+            <div class="side-news">
+
+                <h4>Impacto Social</h4>
+
+                <p>
+                    El narcotráfico no solo es un problema químico,
+                    también está relacionado con pobreza, corrupción y desigualdad.
+                </p>
+
+            </div>
+
+            <div class="side-news">
+
+                <h4>Opinión</h4>
+
+                <p>
+                    La ética científica es el principal límite entre la medicina y la destrucción.
+                </p>
+
+            </div>
+
+            <div class="side-news">
+
+                <h4>Interacción</h4>
+
+                <button onclick="mostrarMensaje()">
+                    Reflexión del Día
+                </button>
+
+                <p id="mensaje"></p>
+
+            </div>
+
+        </aside>
+
     </div>
 
-    <div class="box float-in">
-      <h3>Reflexión</h3>
-      <p>
-        La farmacia salva vidas mediante regulación estricta,
-        mientras que el narcotráfico las pone en riesgo al eliminar todo control.
-      </p>
-    </div>
+    <!-- FOOTER -->
 
-    <div class="box float-in">
-      <h3>Interacción</h3>
+    <footer>
 
-      <button onclick="mostrarMensaje()" class="pulse-btn">
-        Haz clic para reflexionar
-      </button>
+        © 2026 | EL HERALDO CIENTÍFICO
 
-      <p id="mensaje"></p>
-    </div>
+    </footer>
 
-  </div>
-
-</div>
-
-<footer class="fade-in">
-  <p>© 2026 - Edición Educativa | Ciencia, Ética y Sociedad</p>
-</footer>
-
-<script src="java.js"></script>
+    <script src="java.js"></script>
 
 </body>
+
 </html>
