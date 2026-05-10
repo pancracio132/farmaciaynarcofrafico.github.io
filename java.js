@@ -1,20 +1,37 @@
 function mostrarMensaje() {
 
-  const mensajes = [
-    "El conocimiento sin ética puede convertirse en peligro.",
-    "La ciencia no es buena ni mala, depende de su uso.",
-    "La farmacia y el narcotráfico comparten la misma base química, pero no el mismo propósito.",
-    "La decisión final siempre es humana."
-  ];
+    const mensajes = [
 
-  const random = Math.floor(Math.random() * mensajes.length);
+        "La ciencia puede salvar vidas o destruirlas.",
 
-  document.getElementById("mensaje").innerText =
-    mensajes[random];
+        "El narcotráfico utiliza conocimiento químico avanzado.",
+
+        "La ética es el límite entre la medicina y el crimen.",
+
+        "La farmacia protege vidas mediante regulación y control.",
+
+        "La ciencia sin conciencia puede convertirse en peligro."
+    ];
+
+    const random =
+        Math.floor(Math.random() * mensajes.length);
+
+    document.getElementById("mensaje").innerText =
+        mensajes[random];
 }
 
-// efecto de carga
+/* EFECTO DE ENTRADA */
 
 window.onload = () => {
-  document.body.classList.remove("preload");
+
+    document.body.style.opacity = "0";
+
+    setTimeout(() => {
+
+        document.body.style.transition = "1.5s";
+
+        document.body.style.opacity = "1";
+
+    }, 200);
+
 };
